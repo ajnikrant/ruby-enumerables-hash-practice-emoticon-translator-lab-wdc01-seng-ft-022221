@@ -30,9 +30,9 @@ end
 
 
 def get_japanese_emoticon(emoji_file, emoticon)
-emoticons = load_library(emoji_file)
+  emoticons = load_library(emoji_file)
 # binding.pry
-counter = 0
+ counter = 0
   while counter<emoticons.values.length do
     if emoticons.values[counter][:english] == emoticon
       return emoticons.values[counter][:japanese]
