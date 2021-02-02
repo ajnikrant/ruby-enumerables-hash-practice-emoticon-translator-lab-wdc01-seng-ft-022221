@@ -31,9 +31,17 @@ end
 
 
 
-def get_english_meaning(emoji_file, emoji)
+def get_english_meaning(emoji_file, emoticon)
   emoticons = load_library(emoji_file)
-  binding.pry
+  # binding.pry
+  counter = 0
+   while counter<emoticons.values.length do
+     if emoticons.values[counter][:japanese] == emoticon
+       return emoticons.key[counter][:english]
+     end
+     counter +=1
+   end
+   return  "Sorry, that emoticon was not found"
 
 
 end
