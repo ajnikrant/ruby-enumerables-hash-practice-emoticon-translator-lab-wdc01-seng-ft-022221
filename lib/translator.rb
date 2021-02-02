@@ -37,7 +37,7 @@ def get_english_meaning(emoji_file, emoticon)
   counter = 0
    while counter<emoticons.values.length do
      if emoticons.values[counter][:japanese] == emoticon
-       return emoticons.key[counter][:english]
+       return emoticons.keys[counter][:english]
      end
      counter +=1
    end
