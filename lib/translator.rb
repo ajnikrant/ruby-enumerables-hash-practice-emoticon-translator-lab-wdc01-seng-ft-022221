@@ -40,8 +40,7 @@ counter = 0
       end
       counter +=1
     end
-  else
-    "Sorry, that emoticon was not found"
+  return  "Sorry, that emoticon was not found"
 end
 # binding.pry
 
