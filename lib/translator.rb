@@ -31,12 +31,12 @@ end
 
 def get_japanese_emoticon(emoji_file, emoticon)
 emoticons = load_library(emoji_file)
-
-  # if emoticons {new_hash[descriptor]}.has_key? (emoticon)
-  #   emoticons {new_hash[descriptor]}[emoticon]
-  # else
-  #   "Sorry, that emoticon was not found"
-  # end
+binding.pry
+  if emoticons {new_hash[descriptor]}.has_key? (emoticon)
+    emoticons {new_hash[descriptor]}[emoticon]
+  else
+    "Sorry, that emoticon was not found"
+  end
 end
 # binding.pry
 
