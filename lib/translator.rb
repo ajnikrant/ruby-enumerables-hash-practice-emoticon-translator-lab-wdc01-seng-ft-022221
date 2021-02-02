@@ -34,7 +34,6 @@ emoticons = load_library(emoji_file)
 # binding.pry
 counter = 0
 
-  if emoticons.values.has_value? (emoticon)
     while counter<emoticons.values.length do
       if emoticons.values[counter][:english] == emoticon
         return emoticons.values[counter][:japanese]
@@ -43,7 +42,6 @@ counter = 0
     end
   else
     "Sorry, that emoticon was not found"
-  end
 end
 # binding.pry
 
