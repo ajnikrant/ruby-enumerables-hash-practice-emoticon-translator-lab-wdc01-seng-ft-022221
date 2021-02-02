@@ -31,9 +31,16 @@ end
 
 def get_japanese_emoticon(emoji_file, emoticon)
 emoticons = load_library(emoji_file)
-binding.pry
-  if emoticons {new_hash[descriptor]}.has_key? (emoticon)
-    emoticons {new_hash[descriptor]}[emoticon]
+# binding.pry
+counter = 0
+
+  if emoticons.values.has_value? (emoticon)
+    while counter<emoticons.values.length do 
+      if emoticons.values[counter][:english] == emoticon
+        return emoticons.values[counter][:japanese]
+      end
+      counter +=1
+    end
   else
     "Sorry, that emoticon was not found"
   end
