@@ -35,7 +35,7 @@ emoticons = load_library(emoji_file)
 counter = 0
 
   if emoticons.values.has_value? (emoticon)
-    while counter<emoticons.values.length do 
+    while counter<emoticons.values.length do
       if emoticons.values[counter][:english] == emoticon
         return emoticons.values[counter][:japanese]
       end
